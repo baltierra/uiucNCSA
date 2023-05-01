@@ -1,29 +1,38 @@
 import json
+import os
 from datetime import datetime
 
-# Function to replace vowels with their corresponding order number in alphabetical sequence
+# Replace vowels with their corresponding order number in alphabetical sequence
 def replace_vowels_with_order_numbers(s):
     vowel_order = {'a': '1', 'e': '5', 'i': '9', 'o': '15', 'u': '21'}
     replaced_string = ''.join([vowel_order[char.lower()] if char.lower() in vowel_order else char for char in s])
     return replaced_string
 
-# Function to count consonants in a string
+# Count consonants in a string
 def count_consonants(s):
     vowels = "aeiou"
     consonant_count = sum([1 for char in s.lower() if char.isalpha() and char not in vowels])
     return consonant_count
 
-# Function to count vowels in a string
+# Count vowels in a string
 def count_vowels(s):
     vowels = "aeiou"
     vowel_count = sum([1 for char in s.lower() if char.isalpha() and char in vowels])
     return vowel_count
 
-# Function to validate the input string
+# Validate the input string
 def is_valid_input(s):
     return all(char.isalpha() or char.isspace() for char in s)
 
-# Function to process the input string and print the resulting string and consonant count
+
+# Print program header
+def print_header():
+    print("************************************")
+    print("*      VOWELS/NUMBER SWAPPER       *")
+    print("************************************\n")
+
+
+# Process the input string and print the resulting string and consonant count
 def process_input(input_string, data):
     replaced_string = replace_vowels_with_order_numbers(input_string)
     consonant_count = count_consonants(input_string)
@@ -51,6 +60,12 @@ def process_input(input_string, data):
 
 # Main function to control program flow
 def main():
+    print_header()
+    print("This program takes the string \"National Center for Supercomputing Applications,\"")
+    print("replace the vowels for its order number in alphabetical sequence, and count the")
+    print("consonants, displaying the result on screen. After that will allow you to interact")
+    print("and repeat the process with words or sentences of your own (only letters allowed).")
+    
     try:
         with open("data.json", "r") as f:
             data = json.load(f)
@@ -63,7 +78,9 @@ def main():
     while True:
         menu_option = input("Do you want to continue? (y/n): ").lower()
         if menu_option == 'y':
-            user_string = input("\nEnter a new string: ")
+            os.system('clear')
+            print_header()
+            user_string = input("Enter a new string: ")
             while not is_valid_input(user_string):
                 print("Invalid input. Please enter a string containing only letters.")
                 user_string = input("\nEnter a new string: ")
