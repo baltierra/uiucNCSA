@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+}
