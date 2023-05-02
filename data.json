@@ -4,55 +4,23 @@
         "length": 47,
         "vowels_number": 17,
         "consonant_numbers": 26,
-        "last_time_used": "2023-04-29 08:39:06",
-        "times_used": 10
-    },
-    "erase una vez la vida": {
-        "string": "erase una vez la vida",
-        "length": 21,
-        "vowels_number": 9,
-        "consonant_numbers": 8,
-        "last_time_used": "2023-04-29 08:40:17",
+        "last_time_used": "20230501225646",
         "times_used": 1
     },
-    "hola": {
-        "string": "hola",
-        "length": 4,
-        "vowels_number": 2,
-        "consonant_numbers": 2,
-        "last_time_used": "2023-04-29 08:45:46",
-        "times_used": 3
-    },
-    "asdfasd5": {
-        "string": "asdfasd5",
-        "length": 8,
-        "vowels_number": 2,
-        "consonant_numbers": 5,
-        "last_time_used": "2023-04-29 09:02:26",
-        "times_used": 1
-    },
-    "cada dia se hace m\u00e1s dificil continuar": {
-        "string": "cada dia se hace m\u00e1s dificil continuar",
-        "length": 38,
-        "vowels_number": 14,
-        "consonant_numbers": 18,
-        "last_time_used": "2023-04-29 09:05:37",
-        "times_used": 1
-    },
-    "hola que tal": {
-        "string": "hola que tal",
-        "length": 12,
-        "vowels_number": 5,
-        "consonant_numbers": 5,
-        "last_time_used": "2023-04-30 21:21:30",
-        "times_used": 1
-    },
-    "pasa la botella": {
-        "string": "pasa la botella",
-        "length": 15,
-        "vowels_number": 6,
+    "this is a test": {
+        "string": "this is a test",
+        "length": 14,
+        "vowels_number": 4,
         "consonant_numbers": 7,
-        "last_time_used": "20230430212710",
+        "last_time_used": "20230501225651",
+        "times_used": 1
+    },
+    "another test": {
+        "string": "another test",
+        "length": 12,
+        "vowels_number": 4,
+        "consonant_numbers": 7,
+        "last_time_used": "20230501225658",
         "times_used": 1
     }
 }

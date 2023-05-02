@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 
 # Replace vowels with their corresponding order number in alphabetical sequence
-def replace_vowels_with_order_numbers(s):
+def replace_vowels(s):
     vowel_order = {'a': '1', 'e': '5', 'i': '9', 'o': '15', 'u': '21'}
     replaced_string = ''.join([vowel_order[char.lower()] if char.lower() in vowel_order else char for char in s])
     return replaced_string
@@ -34,7 +34,7 @@ def print_header():
 
 # Process the input string and print the resulting string and consonant count
 def process_input(input_string, data):
-    replaced_string = replace_vowels_with_order_numbers(input_string)
+    replaced_string = replace_vowels(input_string)
     consonant_count = count_consonants(input_string)
     vowel_count = count_vowels(input_string)
     current_time = datetime.now().strftime("%Y%m%d%H%M%S")
@@ -55,7 +55,7 @@ def process_input(input_string, data):
             "times_used": 1
         }
 
-    with open("data.json", "w") as f:
+    with open("./data.json", "w") as f:
         json.dump(data, f, indent=4)
 
 # Main function to control program flow
@@ -67,7 +67,7 @@ def main():
     print("and repeat the process with words or sentences of your own (only letters allowed).")
     
     try:
-        with open("data.json", "r") as f:
+        with open("./data.json", "r") as f:
             data = json.load(f)
     except FileNotFoundError:
         data = {}
