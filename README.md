@@ -9,7 +9,7 @@ Below you will find the description of the most important files and folders insi
 
 
 
-1. **vowels.py**: This is a functional Python solution that addresses exactly what it was requested in question od the prescreening document.
+1. **vowels.py**: This is a functional Python solution that addresses exactly what it was requested in question 5 of the prescreening document.
 
 2. **vowels_extended.py**: This is an extension of the previous code, but this time it allows the user to continue interacting with the program through the terminal by entering their own phrases or words. It implements a simple menu, input validation and also for each word that is processed it is able to create an entry in an external JSON file where it stores the following data: string entered, string length, number of vowels in the string, number of consonants in the string, a timestamp of the last time that string was used and how many times it has been used.
 
